@@ -1,8 +1,5 @@
-console.log('hi there');
+import { CharactersCollection as cc } from "./ CharactersCollection";
 
-const logSomething = () => {
-    console.log('test');
-        
-}
 
-logSomething();
+
+
