@@ -1,5 +1,9 @@
-export class CharactersCollection {
-  constructor(public data: string) {}
+import { Sort } from "./Sort";
+
+export class CharactersCollection extends Sort {
+  constructor(public data: string) {
+    super();
+  }
 
   get length(): number {
     return this.data.length;
@@ -17,5 +21,10 @@ export class CharactersCollection {
     characters[leftIndex] = characters[rightIndex];
     characters[rightIndex] = temp;
     this.data = characters.join("");
+  }
+
+  get ccSorter() {
+    this.sorter
+    return console.log(this.data);
   }
 }
