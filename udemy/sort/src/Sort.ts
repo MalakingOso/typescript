@@ -9,7 +9,7 @@ export abstract class Sort {
   abstract swap(leftIndex: number, rightIndex: number): void;
   abstract length: number;
 
-  sorter(): void {
+  get sorter(): void {
     const { length } = this;
 
     for (let i = 0; i < length; i++) {
@@ -17,7 +17,8 @@ export abstract class Sort {
         if (this.compare(j, j + 1)) {
           this.swap(j, j + 1);
         }
-      }
+      }''
     }
+    return;
   }
 }

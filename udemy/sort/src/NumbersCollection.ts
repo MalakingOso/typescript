@@ -1,5 +1,9 @@
-export class NumbersCollection {
-  constructor(public data: number[]) {}
+import { Sort } from "./Sort";
+
+export class NumbersCollection extends Sort {
+  constructor(public data: number[]) {
+    super();
+  }
 
   get length(): number {
     return this.data.length;
@@ -13,5 +17,10 @@ export class NumbersCollection {
     const temp = this.data[leftIndex];
     this.data[leftIndex] = this.data[rightIndex];
     this.data[rightIndex] = temp;
+  }
+
+  get ncSorter() {
+    this.sorter;
+    return console.log(this.data);
   }
 }

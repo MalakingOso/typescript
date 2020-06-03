@@ -1,9 +1,11 @@
+import { Sort } from "./Sort";
+
 class Node {
   next: Node | null = null;
   constructor(public data: number) {}
 }
 
-export class LinkedList {
+export class LinkedList extends Sort {
   head: Node | null = null;
 
   add(x: number): void {
@@ -80,7 +82,7 @@ export class LinkedList {
     let node: Node | null = this.head;
     while (node) {
       console.log(node.data);
-      node = node.next
+      node = node.next;
     }
   }
 }

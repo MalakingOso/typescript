@@ -23,8 +23,9 @@ export class CharactersCollection extends Sort {
     this.data = characters.join("");
   }
 
-  get ccSorter() {
+  get ccSorter(){
     this.sorter
     return console.log(this.data);
+    
   }
 }
